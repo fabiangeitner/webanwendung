@@ -43,6 +43,7 @@ class PostsController extends Controller
         $post = new Post;
         $post->workout = $request->input('workout');
         $post->beschreibung = $request->input('beschreibung');
+        $post->user_id = auth()->user()->id;
         $post->save();
 
         return redirect('/workouts')->with('success', 'Trainingseinheit erfolgreich erstellt!');

@@ -1,4 +1,4 @@
-@extends('app')
+@extends('layouts.app')
 
 @section('content')
 <a href="/workouts" class="btn btn-default">Zurück</a>
