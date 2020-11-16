@@ -3,7 +3,7 @@
 @section('content')
     <h1>CREATE Workout</h1>
     <div class="container">
-        <form action="{{action('App\Http\Controllers\PostsController@store')}}" method="post">
+        <form action="{{action('App\Http\Controllers\PostsController@store')}}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label>Traingseinheit</label>

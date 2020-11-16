@@ -13,13 +13,12 @@
 
             </ul>
 
-            <nav class="my-2 my-md-0 mr-md-3">
-              <a class="p-2 text-dark" href="/">Start</a>
-              <a class="p-2 text-dark" href="/workouts">Trainingsplan</a>
-            </nav>
+
 
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
+
+
                 <!-- Authentication Links -->
                 @guest
                     @if (Route::has('login'))

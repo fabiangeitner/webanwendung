@@ -46,7 +46,7 @@ class PostsController extends Controller
         $post->user_id = auth()->user()->id;
         $post->save();
 
-        return redirect('/workouts')->with('success', 'Trainingseinheit erfolgreich erstellt!');
+        return redirect('/home')->with('success', 'Trainingseinheit erfolgreich erstellt!');
     }
 
     /**
@@ -91,7 +91,7 @@ class PostsController extends Controller
         $post->beschreibung = $request->input('beschreibung');
         $post->save();
 
-        return redirect('/workouts')->with('success', 'Trainingseinheit erfolgreich geändert!');
+        return redirect('/home')->with('success', 'Trainingseinheit erfolgreich geändert!');
     }
 
     /**
@@ -104,6 +104,6 @@ class PostsController extends Controller
     {
         $post = Post::find($id);
         $post->delete();
-        return redirect('/workouts')->with('success', 'Trainingseinheit erfolgreich gelöscht!');
+        return redirect('/home')->with('success', 'Trainingseinheit erfolgreich gelöscht!');
     }
 }
