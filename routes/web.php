@@ -20,4 +20,4 @@ Route::resource('workouts', 'App\Http\Controllers\PostsController');
 
 Auth::routes();
 
-Route::get('/home', 'App\Http\Controllers\HomeController@index');
+Route::get('/home', 'App\Http\Controllers\HomeController@trainingseinheiten');

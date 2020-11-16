@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">{{ __('Dein Trainingsplan') }}</div>
                 <div class="card-body">
-                <a class="btn btn-outline-primary" href="/workouts/create">Trainingseinheit erstellen</a>
+                <a class="btn btn-primary" href="/workouts/create">Trainingseinheit erstellen</a>
                 </div>
 
                 <div class="card-body">
@@ -28,7 +28,7 @@
                         <tr>
                         <td><a href="/workouts/{{$post->workout_id}}">{{$post->workout}}</a></td>
                         <td>{{$post->beschreibung}}</td>
-                        <td><a href="/workouts/{{$post->workout_id}}/edit" class="btn btn-default">Bearbeiten</a></td>
+                        <td><a href="/workouts/{{$post->workout_id}}/edit" class="btn btn-light">Bearbeiten</a></td>
                         <td><form action="{{action('App\Http\Controllers\PostsController@destroy', $post->workout_id) }}" method="post", class="pull-right">
                                 @csrf
                                 @method('DELETE')

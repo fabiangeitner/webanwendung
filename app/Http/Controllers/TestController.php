@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class TestController extends Controller
 {
     public function index(){
-        $title = "Dein Fitness-Plan 24/7";
+        $title = "Fitness-Plan 24/7";
         return view('index')->with('title', $title);
     }
 }
