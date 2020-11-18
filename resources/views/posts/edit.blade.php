@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>EDIT Workout</h1>
+    <h1>Trainingseinheit bearbeiten</h1>
     <div class="container">
         <form action="{{action('App\Http\Controllers\PostsController@update', $post->workout_id) }}" method="post">
             @csrf
