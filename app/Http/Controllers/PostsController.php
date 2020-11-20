@@ -37,7 +37,8 @@ class PostsController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'workout'=>'required'
+            'workout'=>'required',
+            'beschreibung'=>'required'
         ]);
         //neuen Eintrag erstellen
         $post = new Post;
